@@ -16,7 +16,7 @@ class StockPage extends React.Component{
         if(this.props.default == "apple"){
             return(
                 <div>
-                    <Nav/>
+                    <Nav second="active"/>
                     <Container className='mt-4'>
                         <Tabs defaultActiveKey="Apple" id="uncontrolled-tab-example">
                             <Tab eventKey="Apple" title="Apple">

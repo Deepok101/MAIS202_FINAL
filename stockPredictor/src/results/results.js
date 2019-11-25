@@ -19,7 +19,7 @@ class Stock extends React.Component{
     render(){
         return(
             <div>
-                <Nav/>
+                <Nav third="active"/>
 
                 <Container className='mt-4'>
                     <Row>

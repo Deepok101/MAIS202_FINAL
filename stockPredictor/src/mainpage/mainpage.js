@@ -27,7 +27,8 @@ class MainPage extends React.Component{
             formattedGameData: [],
             passiveProfit: 0,
             activeProfit: 0,
-            loading:false
+            loading:false,
+            price:0
         }
         this.onChange = this.onChange.bind(this)
         this.sendData = this.sendData.bind(this)
@@ -117,7 +118,7 @@ class MainPage extends React.Component{
         
         return(
             <div>
-                <Nav/>
+                <Nav first="active"/>
                 <Container className='mt-4'>
                     <Row>
                         <Col md={{ span: 8, offset: 2 }}>
@@ -128,6 +129,12 @@ class MainPage extends React.Component{
                                             <h2>
                                                 Apple Investing
                                             </h2>
+                                            <h5>
+                                                Date: 2013-07-12
+                                            </h5>
+                                            <h5>
+                                                Price: $67.27
+                                            </h5>
                                             <Form.Group className='mt-4' controlId="exampleForm.ControlSelect1">
                                                 <Form.Label>Type of Investor</Form.Label>
                                                 <Form.Control name="typeInvestment" as="select" onChange={this.handleFormControlChange.bind(this)}>
@@ -161,6 +168,12 @@ class MainPage extends React.Component{
                                             <h2>
                                                 Goldman Sachs Investing
                                             </h2>
+                                            <h5>
+                                                Date: 2013-07-15
+                                            </h5>
+                                            <h5>
+                                                Price: $160.28
+                                            </h5>
                                             <Form.Group className='mt-4' controlId="exampleForm.ControlSelect1">
                                                 <Form.Label>Type of Investor</Form.Label>
                                                 <Form.Control name="typeInvestment" as="select" onChange={this.handleFormControlChange.bind(this)}>

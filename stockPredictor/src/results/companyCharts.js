@@ -132,6 +132,12 @@ class AppleChart extends React.Component{
                     />
                   }
                 >
+                  <VictoryAxis
+                    dependentAxis label="Price"
+                  />
+                  <VictoryAxis
+                    label="Time"
+                  />
                   <VictoryLine
                     style={{
                       data: { stroke: "tomato" }
@@ -154,6 +160,12 @@ class AppleChart extends React.Component{
                     />
                   }
                   >
+                    <VictoryAxis
+                      dependentAxis label="Price"
+                    />
+                    <VictoryAxis
+                      label="Time"
+                    />
                     <VictoryLine
                       style={{
                         data: { stroke: "blue" }
